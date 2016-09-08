@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "iPlayer in HD",
+  "version": "1.0",
+  "description": "This extension will force HD quality on BBC iPlayer",
+  "icons": { "512": "icon.png" },
+  "content_scripts": [{
+    "matches": ["http://www.bbc.co.uk/iplayer/episode/*"],
+    "js": ["content.js"]
+  }],
+  "web_accessible_resources": ["script.js"]
+}
